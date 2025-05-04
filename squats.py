@@ -21,7 +21,8 @@ def squat_detection(cap):
         frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
         # Process frame
-        processed_frame, _ = frame_processor.process(frame_rgb, pose)
+        # processed_frame, _ = frame_processor.process(frame_rgb, pose)
+        processed_frame, play_sound = frame_processor.process(frame_rgb, pose)
 
         # Convert back to BGR for display
         display_frame = cv2.cvtColor(processed_frame, cv2.COLOR_RGB2BGR)

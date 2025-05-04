@@ -79,7 +79,7 @@ def push_up_detection(cap):
     
     # Countdown setup
     countdown_start = time.time()
-    countdown_duration = 5
+    countdown_duration = 3
     countdown_active = True
     
     # Movement detection to prevent false positives
@@ -331,7 +331,7 @@ def push_up_detection(cap):
         
         # Acceptable form counter (right side)
         cv2.rectangle(image, (w - 10 - acceptable_width, 10), (w - 10, 60), (0, 165, 255), -1)
-        cv2.putText(image, 'ACCEPTABLE', (w - acceptable_width + 5, 30), 
+        cv2.putText(image, 'CORRECT', (w - acceptable_width + 5, 30), 
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
         cv2.putText(image, str(acceptable_form_count), (w - acceptable_width + 50, 50), 
                     cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255, 255, 255), 2, cv2.LINE_AA)
