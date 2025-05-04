@@ -1,36 +1,51 @@
-# Virtual Environment
-venv/
-env/
-ENV/
-.env
-.venv
-env.bak/
-venv.bak/
-
-# Python bytecode
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Distribution / packaging
-dist/
-build/
-*.egg-info/
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.Python
 
-# Unit test / coverage reports
+# Flask instance folder
+instance/
+.webassets-cache
+
+# VS Code settings
+.vscode/
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
 htmlcov/
 .tox/
-.coverage
-.coverage.*
-.cache
-coverage.xml
-*.cover
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# MyPy / Pyre / Pylint
+.mypy_cache/
+.pyre/
+.pylint.d/
 
-# IDE specific files
-.idea/
-.vscode/
-*.swp
-*.swo
+# Logs
+*.log
+
+# MacOS system files
+.DS_Store
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Environment files
+.env
+.env.*
+
+# Database or SQLite files (optional)
+*.db
+*.sqlite3
