@@ -44,9 +44,9 @@ def push_up_detection(cap):
     Generator function for push-up detection that yields frame data for Flask streaming
     """
     # Reset cap to ensure fresh start
-    if cap.isOpened():
-        cap.release()
-    cap = cv2.VideoCapture(0)
+    # if cap.isOpened():
+    #     cap.release()
+    # cap = cv2.VideoCapture(0)
     
     # Set width and height
     cap.set(3, 640)
